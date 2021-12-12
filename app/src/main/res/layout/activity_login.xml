@@ -11,17 +11,31 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".ui.login.LoginActivity">
 
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_700"
+        android:textSize="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="15dp"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/title_divider" />
 
     <EditText
         android:id="@+id/password"
@@ -48,9 +62,10 @@
         android:text="@string/action_sign_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.073" />
 
     <ProgressBar
         android:id="@+id/loading"
@@ -66,7 +81,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
 
-    <com.google.android.material.tabs.TabLayout
+    <View
+        android:id="@+id/title_divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_title"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <!--<com.google.android.material.tabs.TabLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
@@ -79,10 +104,10 @@
             android:layout_height="wrap_content"
             android:text="Login">
 
-<!--            <com.google.android.material.textfield.TextInputEditText
+&lt;!&ndash;            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="10dp"
                 android:layout_height="10dp"
-                android:text="Logging in!" />-->
+                android:text="Logging in!" />&ndash;&gt;
         </com.google.android.material.tabs.TabItem>
 
         <com.google.android.material.tabs.TabItem
@@ -93,6 +118,6 @@
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
 
-    </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.tabs.TabLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
