@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "613622539328",
+    "project_id": "abstract-2cb8f",
+    "storage_bucket": "abstract-2cb8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613622539328:android:e2c525a3b823d249612ba5",
+        "android_client_info": {
+          "package_name": "com.windorland.abstractapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613622539328-f4kfh8plpbnfe3bu04065mo1rpd677fi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo7J4btlKwu6Ev2hA-_o7Gs230wd2UCkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613622539328-f4kfh8plpbnfe3bu04065mo1rpd677fi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
