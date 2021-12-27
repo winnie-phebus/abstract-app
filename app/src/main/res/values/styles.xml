@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- <style name="GreenText" parent="TextAppearance.AppCompat">
         <item name="android:textColor">#00FF00</item>
     </style> -->
     <!-- Will be expanding this out further as needed, just thought this was cool so adding it in now -->
     <!-- Reference https://developer.android.com/guide/topics/ui/look-and-feel/themes for more -->
-    <style name="LogoText" parent="TextAppearance.AppCompat.Headline">
-        <item name="android:textColor">@color/colorPrimary</item>
+    <style name="LogoText" parent="@style/Theme.AbstractApp">
+        <item name="android:textColor">?attr/colorPrimary</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="UsernameBox" parent="TextAppearance.AppCompat">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <style name="InputLayouts" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="boxBackgroundColor">?attr/boxBackgroundColor</item>
+        <item name="android:textColorHint">?attr/colorSecondary</item>
+        <item name="hintTextColor">?attr/colorSecondary</item>
+         <item name="boxStrokeColor">?attr/colorSecondaryVariant</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/corner_rounding</item>
+    </style>
+
 </resources>

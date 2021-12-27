@@ -25,13 +25,23 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
         - <https://material.io/resources/color/#!/?view.left=0&view.right=0>
         - <https://developer.android.com/reference/android/view/View#lattrs>
         - <https://chromium.googlesource.com/android_tools/+/HEAD/sdk/extras/android/support/v7/appcompat/res/values/attrs.xml>
+        - <https://guides.codepath.com/android/developing-custom-themes>
+        - <https://zoolatech.com/blog/android-themes-styles-and-attributes/>
+        - <https://material.io/components/text-fields/android>
 
 - ### Binding
   
     - <https://developer.android.com/topic/libraries/data-binding>
     
+- ### Fragments and Activities
+
+    - <https://developer.android.com/guide/fragments>
+
 - ### Markdown
 
     - <https://www.markdownguide.org/basic-syntax/>
     
+- ### For Future Reference
+
+    - <https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout>
 -
