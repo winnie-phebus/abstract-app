@@ -5,6 +5,7 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
 - ### Firebase:
   
     - <https://firebase.google.com/codelabs/firebase-android?authuser=0#5>
+    - <https://firebase.google.com/docs/auth/android/start?authuser=0#kotlin+ktx_4>
     
 - ### Android Basics in Kotlin Course, Android Developers
   
@@ -27,7 +28,7 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
         - <https://chromium.googlesource.com/android_tools/+/HEAD/sdk/extras/android/support/v7/appcompat/res/values/attrs.xml>
         - <https://guides.codepath.com/android/developing-custom-themes>
         - <https://zoolatech.com/blog/android-themes-styles-and-attributes/>
-        - <https://material.io/components/text-fields> 
+
 
 - ### Binding
   
@@ -44,4 +45,10 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
 - ### For Future Reference
 
     - <https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout>
+    
+- ### Widgets
+
+    - <https://material.io/components/dialogs>
+    - <https://material.io/components/text-fields>
+    
 -
