@@ -1,2 +1,37 @@
-This isn't set up for now. Right now it's a repository for to-dos:
-- https://firebase.google.com/codelabs/firebase-android?authuser=0#5
+This isn't set up for now. Right now it's a repository for credit to-dos:
+
+## Resources:
+
+- ### Firebase:
+  
+    - <https://firebase.google.com/codelabs/firebase-android?authuser=0#5>
+    
+- ### Android Basics in Kotlin Course, Android Developers
+  
+    - <https://developer.android.com/courses/android-basics-kotlin/course>
+    
+- ### XML and Styling
+  
+    - #### Text
+      
+        - <https://developer.android.com/reference/android/widget/TextView>
+        - <https://developer.android.com/reference/android/widget/EditText>
+        - <https://developer.android.com/reference/android/R.styleable#TextAppearance>
+        
+    - #### Style, Colors, and Themes
+      
+        - <https://developer.android.com/guide/topics/ui/look-and-feel/themes>
+        - <https://developer.android.com/reference/android/R.styleable#Theme>
+        - <https://material.io/resources/color/#!/?view.left=0&view.right=0>
+        - <https://developer.android.com/reference/android/view/View#lattrs>
+        - <https://chromium.googlesource.com/android_tools/+/HEAD/sdk/extras/android/support/v7/appcompat/res/values/attrs.xml>
+
+- ### Binding
+  
+    - <https://developer.android.com/topic/libraries/data-binding>
+    
+- ### Markdown
+
+    - <https://www.markdownguide.org/basic-syntax/>
+    
+-
