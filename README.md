@@ -27,7 +27,7 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
         - <https://chromium.googlesource.com/android_tools/+/HEAD/sdk/extras/android/support/v7/appcompat/res/values/attrs.xml>
         - <https://guides.codepath.com/android/developing-custom-themes>
         - <https://zoolatech.com/blog/android-themes-styles-and-attributes/>
-        - <https://material.io/components/text-fields/android>
+        - <https://material.io/components/text-fields> 
 
 - ### Binding
   
