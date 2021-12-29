@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import androidx.core.view.isVisible
 import com.example.abstractapp.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -16,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var auth: FirebaseAuth
+    private var inLoginState: Boolean = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,22 +25,40 @@ class MainActivity : AppCompatActivity() {
         // AUTHENTICATION TINGS
         auth = Firebase.auth
 
-        binding.registerButton.setOnClickListener { registerPress() } // TODO: check for missing steps
-        binding.loginButton.setOnClickListener { loginUser() }
+        binding.switchButton.setOnClickListener { switchAuthPress() } // TODO: check for missing steps
+        binding.authButton.setOnClickListener { authButtonPress() }
     }
 
-    private fun registerPress() {
-        binding.loginUsernameLayout.visibility = View.GONE
-        binding.loginPasswordLayout.visibility = View.GONE
-        binding.fragmentContainerView.visibility = View.VISIBLE
+    private fun switchAuthPress() {
+        if (inLoginState) {
+            binding.tagline.setText(R.string.login_subtitle)
+            binding.authButton.setText(R.string.login)
+            binding.switchButton.setText(R.string.register_redirect)
+            binding.passwordConfirmLayout.visibility = View.GONE
+        } else { // this means that the Activity is in "Register" status
+            binding.tagline.setText(R.string.register_subtitle)
+            binding.authButton.setText(R.string.register)
+            binding.switchButton.setText(R.string.login_redirect)
+            binding.passwordConfirmLayout.visibility = View.VISIBLE
+        }
+        inLoginState = !inLoginState
+    }
+
+    private fun authButtonPress() {
+        if (inLoginState) {
+            loginUser()
+        } else {
+            registerUser()
+        }
     }
 
     private fun registerUser() {
-        val email = "test" // TODO: finalize registration UI and make this functional
-        val password = "test" // TODO: RE-UI, maybe consider a confirmation Dialog??
+        val email = binding.loginEmail.text.toString()
+        val password = binding.loginPassword.text.toString()
+        val confirmpassword = binding.passwordConfirm.text.toString()
 
-        if ((email == null) || (password == null)) {
-            print("Error")
+        if (((email == null) || (password == null)) || (password != confirmpassword)) {
+            print("Error")  // TODO: sit down and make a proper error display pipeline
         } else {
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->

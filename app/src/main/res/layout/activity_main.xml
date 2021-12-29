@@ -13,20 +13,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="150dp"
         android:text="@string/app_name"
         android:textSize="45sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tagline"
+        style="@style/Subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_margin"
+        android:text="@string/login_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_title" />
+
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/login_username_layout"
+        android:id="@+id/username_layout"
         style="@style/InputLayouts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/prompt_email"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/app_title">
+        app:layout_constraintTop_toBottomOf="@id/tagline">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_email"
@@ -36,13 +46,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/login_password_layout"
+        android:id="@+id/password_layout"
         style="@style/InputLayouts.passwordLayouts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/prompt_password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_username_layout">
+        app:layout_constraintTop_toBottomOf="@id/username_layout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_password"
@@ -51,35 +61,43 @@
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_confirm_layout"
+        style="@style/InputLayouts.passwordLayouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_password_confirm"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_confirm"
+            style="@style/InputBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/auth_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/general_margin"
         android:text="@string/login"
         android:textColor="?attr/colorOnPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_password_layout" />
+        app:layout_constraintTop_toBottomOf="@id/password_confirm_layout" />
 
     <Button
-        android:id="@+id/register_button"
+        android:id="@+id/switch_button"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register_redirect"
         android:textColor="?attr/colorPrimary"
-        app:layout_constraintStart_toEndOf="@id/login_button"
-        app:layout_constraintTop_toTopOf="@id/login_button" />
+        app:layout_constraintStart_toEndOf="@id/auth_button"
+        app:layout_constraintTop_toTopOf="@id/auth_button" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_container_view"
-        android:name="com.example.abstractapp.Registration"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_button"
-        android:visibility="invisible">
-
-    </androidx.fragment.app.FragmentContainerView>
 </androidx.constraintlayout.widget.ConstraintLayout><!-- Multi-line comments follow the patterns of
     single line comments, there seems to not really be a difference -->
