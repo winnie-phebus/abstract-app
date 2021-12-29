@@ -28,6 +28,7 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
         - <https://chromium.googlesource.com/android_tools/+/HEAD/sdk/extras/android/support/v7/appcompat/res/values/attrs.xml>
         - <https://guides.codepath.com/android/developing-custom-themes>
         - <https://zoolatech.com/blog/android-themes-styles-and-attributes/>
+        - <https://stackoverflow.com/questions/3465841/how-to-change-visibility-of-layout-programmatically>
 
 
 - ### Binding
@@ -37,6 +38,7 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
 - ### Fragments and Activities
 
     - <https://developer.android.com/guide/fragments>
+    - <https://proandroiddev.com/android-fragments-fragmentcontainerview-292f393f9ccf>
 
 - ### Markdown
 

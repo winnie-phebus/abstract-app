@@ -3,7 +3,9 @@ package com.example.abstractapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
+import androidx.core.view.isVisible
 import com.example.abstractapp.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -12,7 +14,7 @@ import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,11 +25,17 @@ class MainActivity : AppCompatActivity() {
         // AUTHENTICATION TINGS
         auth = Firebase.auth
 
-        binding.registerButton.setOnClickListener { register_user() } // TODO: check for missing steps
-        binding.loginButton.setOnClickListener { login_user() }
+        binding.registerButton.setOnClickListener { registerPress() } // TODO: check for missing steps
+        binding.loginButton.setOnClickListener { loginUser() }
     }
 
-    private fun register_user() {
+    private fun registerPress() {
+        binding.loginUsernameLayout.visibility = View.GONE
+        binding.loginPasswordLayout.visibility = View.GONE
+        binding.fragmentContainerView.visibility = View.VISIBLE
+    }
+
+    private fun registerUser() {
         val email = "test" // TODO: finalize registration UI and make this functional
         val password = "test" // TODO: RE-UI, maybe consider a confirmation Dialog??
 
@@ -54,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun login_user() {
+    private fun loginUser() {
         val email = binding.loginEmail.text.toString()
         val password = binding.loginPassword.text.toString()
         if ((email == null) || (password == null)) {

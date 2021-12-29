@@ -11,18 +11,30 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="UsernameBox" parent="TextAppearance.AppCompat">
+    <style name="Header1" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">?attr/colorSecondary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Subtitle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="InputBox" parent="TextAppearance.AppCompat">
         <item name="android:background">@null</item>
         <item name="android:textColor">?attr/colorSecondaryVariant</item>
     </style>
 
     <style name="InputLayouts" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
-        <item name="boxBackgroundColor">?attr/boxBackgroundColor</item>
+        <!--<item name="boxBackgroundColor">?attr/boxBackgroundColor</item>
         <item name="android:textColorHint">?attr/colorSecondary</item>
         <item name="hintTextColor">?attr/colorSecondary</item>
-         <item name="boxStrokeColor">?attr/colorSecondaryVariant</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="boxStrokeColor">?attr/colorSecondaryVariant</item>-->
+        <!-- TODO: investigate why the above section broke your code and if you care about it -->
+        <item name="android:layout_margin">@dimen/general_margin</item>
     </style>
 
     <style name="InputLayouts.passwordLayouts">
