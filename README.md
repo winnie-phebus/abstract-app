@@ -44,6 +44,9 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
 
     - <https://www.markdownguide.org/basic-syntax/>
     
+- ### Navigation
+    - <https://developer.android.com/training/basics/firstapp/starting-activity>
+    
 - ### For Future Reference
 
     - <https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout>
