@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         val password = binding.loginPassword.text.toString()
         val confirmpassword = binding.passwordConfirm.text.toString()
 
+        //
         if (((email == null) || (password == null)) || (password != confirmpassword)) {
             print("Error")  // TODO: sit down and make a proper error display pipeline
         } else {

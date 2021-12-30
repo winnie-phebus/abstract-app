@@ -44,6 +44,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.preference:preference:1.1.1'
     testImplementation 'junit:junit:4.+'
 
     // Lifecycle
@@ -60,6 +61,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
     implementation 'com.firebaseui:firebase-ui-database:7.2.0'
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 
     // Test
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
