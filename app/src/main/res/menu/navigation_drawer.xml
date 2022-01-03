@@ -4,13 +4,27 @@
         android:id="@+id/group1"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/item1"
-            android:title="TODO" />
+            android:id="@+id/notes"
+            android:title="notes" />
         <item
-            android:id="@+id/item2"
-            android:title="TODO" />
+            android:id="@+id/tags"
+            android:title="tags" />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
         <item
-            android:id="@+id/item3"
-            android:title="TODO" />
+            android:id="@+id/archive"
+            android:title="archive" />
+        <item
+            android:id="@+id/trash"
+            android:title="trash" />
+        <item
+            android:id="@+id/rules"
+            android:title="rules" />
+        <item
+            android:id="@+id/settings"
+            android:title="settings" />
     </group>
 </menu>
