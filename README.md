@@ -56,4 +56,8 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
     - <https://material.io/components/dialogs>
     - <https://material.io/components/text-fields>
     
+- ### Search
+    
+    - <https://developer.android.com/guide/topics/search/search-dialog>
+
 -
