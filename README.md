@@ -59,8 +59,19 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
 - ### Search
     
     - <https://developer.android.com/guide/topics/search/search-dialog>
+    - <https://developer.android.com/reference/androidx/appcompat/widget/SearchView>
+    - <https://developer.android.com/guide/topics/search>
+    - <https://www.javatpoint.com/android-searchview-on-toolbar>
 
-- ### App Bar
+- ### App Bar + Nav Drawer
 
     - <https://developer.android.com/training/appbar/action-views>
+    - <https://material.io/components/navigation-drawer/android#modal-navigation-drawer>
+    - <https://developer.android.com/training/appbar/action-views>
+    - <https://developer.android.com/training/appbar#ActionView>
+    - <https://stackoverflow.com/questions/26492522/how-do-i-remove-the-title-bar-from-my-app>
+    
+- ### Icons
+
+    - <https://materialdesignicons.com/>
 -
