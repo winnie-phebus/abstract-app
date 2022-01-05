@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_folder_outline.xml" value="0.19375" />
+        <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_folder_plus_outline.xml" value="0.19375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_hamburger_menu.xml" value="0.19375" />
+        <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_note_outline.xml" value="0.19375" />
+        <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_plus.xml" value="0.19375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_search_magnify.xml" value="0.1" />
+        <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_tuner.xml" value="0.19375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/activity_login.xml" value="0.1734375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
@@ -13,6 +18,7 @@
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/fragment_registration.xml" value="0.22" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/fragment_search.xml" value="0.1" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/header_navigation_drawer.xml" value="0.1734375" />
+        <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/modal_bottom_sheet_content.xml" value="0.1272644927536232" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/navigation_drawer.xml" value="0.11322463768115942" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/menu/navigation_drawer.xml" value="0.21" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/menu/top_app_bar.xml" value="0.1734375" />

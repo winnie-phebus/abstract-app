@@ -46,4 +46,9 @@
         <item name="cornerSize">@dimen/corner_rounding</item>
     </style>
 
+    <style name="floatingButtonStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="tint">?attr/colorSecondaryVariant</item>
+    </style>
+
 </resources>

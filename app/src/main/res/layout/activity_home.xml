@@ -35,18 +35,22 @@
 
             </com.google.android.material.appbar.AppBarLayout>
             <!-- Screen content -->
-            <androidx.appcompat.widget.LinearLayoutCompat
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-                <Button
-                    android:id="@+id/new_note"
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/new_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/general_margin"
+                    android:layout_margin="30dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    style="@style/floatingButtonStyle"
+                    app:srcCompat="@drawable/ic_plus" />
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
         <com.google.android.material.navigation.NavigationView

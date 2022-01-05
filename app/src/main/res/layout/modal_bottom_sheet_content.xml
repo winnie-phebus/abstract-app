@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.MaterialComponents.BottomSheet.Modal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="?attr/colorPrimaryVariant">
+
+    <TextView
+        android:id="@+id/sheet_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_margin"
+        android:text="CREATE NEW"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/folder_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_margin"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/ic_folder_outline"
+        android:text="folder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sheet_title" />
+    <Button
+        android:id="@+id/note_button"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_margin"
+        android:drawableTop="@drawable/ic_note_outline"
+        android:text="note"
+        app:layout_constraintStart_toEndOf="@id/folder_button"
+        app:layout_constraintTop_toBottomOf="@+id/sheet_title" />
+    <Button
+        android:id="@+id/rule_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_margin"
+        android:gravity="center_horizontal"
+        android:drawableTop="@drawable/ic_tuner"
+        android:text="rule"
+        app:layout_constraintStart_toEndOf="@id/note_button"
+        app:layout_constraintTop_toBottomOf="@+id/sheet_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -55,6 +55,7 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
 
     - <https://material.io/components/dialogs>
     - <https://material.io/components/text-fields>
+    - <https://material.io/components/buttons-floating-action-button/android#regular-top-app-bar>
     
 - ### Search
     
@@ -74,4 +75,5 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
 - ### Icons
 
     - <https://materialdesignicons.com/>
+    - <https://fonts.google.com/icons?selected=Material+Icons>
 -
