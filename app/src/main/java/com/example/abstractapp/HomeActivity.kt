@@ -1,10 +1,12 @@
 package com.example.abstractapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.example.abstractapp.databinding.ActivityHomeBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -30,8 +32,20 @@ class HomeActivity : AppCompatActivity() {
         }
 
         binding.newButton.setOnClickListener{
-            // TODO: put a bottom dialog here
-            modalBottomSheet.show(supportFragmentManager, ModalBottomSheet.TAG)
+            val modalBottomSheetViews = R.layout.modal_bottom_sheet_content
+            //modalBottomSheet.show(supportFragmentManager, ModalBottomSheet.TAG)
+            // Okay, I'm at a loss. If I had been able to use binding I wouldn't be here, but alas
+            // If I had simply inflated this view instead of using the Fragment Manager I could also
+            // have continued from that point - but again, alas.
+
+            val view = layoutInflater.inflate(R.layout.modal_bottom_sheet_content, null)
+            val noteButton = view.findViewById<Button>(R.id.note_button)
+
+            noteButton.setOnClickListener {
+                val intent = Intent(this, HomeActivity::class.java)
+                // intent.putExtra("user", user)
+                startActivity(intent)
+            }
         }
     }
 }

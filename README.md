@@ -38,6 +38,7 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
 - ### Fragments and Activities
 
     - <https://developer.android.com/guide/fragments>
+      - <https://developer.android.com/guide/fragments/communicate>
     - <https://proandroiddev.com/android-fragments-fragmentcontainerview-292f393f9ccf>
 
 - ### Markdown
