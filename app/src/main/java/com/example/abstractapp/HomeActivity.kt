@@ -31,21 +31,9 @@ class HomeActivity : AppCompatActivity() {
             true
         }
 
-        binding.newButton.setOnClickListener{
+        binding.newButton.setOnClickListener {
             val modalBottomSheetViews = R.layout.modal_bottom_sheet_content
-            //modalBottomSheet.show(supportFragmentManager, ModalBottomSheet.TAG)
-            // Okay, I'm at a loss. If I had been able to use binding I wouldn't be here, but alas
-            // If I had simply inflated this view instead of using the Fragment Manager I could also
-            // have continued from that point - but again, alas.
-
-            val view = layoutInflater.inflate(R.layout.modal_bottom_sheet_content, null)
-            val noteButton = view.findViewById<Button>(R.id.note_button)
-
-            noteButton.setOnClickListener {
-                val intent = Intent(this, HomeActivity::class.java)
-                // intent.putExtra("user", user)
-                startActivity(intent)
-            }
+            modalBottomSheet.show(supportFragmentManager, ModalBottomSheet.TAG)
         }
     }
 }
@@ -58,7 +46,18 @@ class ModalBottomSheet : BottomSheetDialogFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? = inflater.inflate(R.layout.modal_bottom_sheet_content, container, false)
+    ): View? {
+        val view = inflater.inflate(R.layout.modal_bottom_sheet_content, container, false)
+
+        //TODO: add the actions for new folder and new rule
+        val noteButton = view.findViewById<Button>(R.id.note_button)
+        noteButton.setOnClickListener {
+            val intent = Intent(getActivity(), NoteActivity::class.java)
+            startActivity(intent)
+        }
+
+        return view
+    }
 
     companion object {
         const val TAG = "ModalBottomSheet"
