@@ -29,6 +29,7 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
         - <https://guides.codepath.com/android/developing-custom-themes>
         - <https://zoolatech.com/blog/android-themes-styles-and-attributes/>
         - <https://stackoverflow.com/questions/3465841/how-to-change-visibility-of-layout-programmatically>
+        - <https://guides.codepath.com/android/Styles-and-Themes>
 
 
 - ### Binding
@@ -77,4 +78,8 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
 
     - <https://materialdesignicons.com/>
     - <https://fonts.google.com/icons?selected=Material+Icons>
--
+
+- ### Publishing
+    - <https://developers.google.com/android/guides/client-auth?authuser=0>
+    -    
+-  
