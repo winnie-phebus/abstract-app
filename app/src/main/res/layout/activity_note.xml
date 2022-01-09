@@ -29,14 +29,25 @@
         </com.google.android.material.appbar.AppBarLayout>
         <!-- Screen content -->
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/note_abstract"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></EditText>
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:hint="Your Abstract Here"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <EditText
+                android:id="@+id/note_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Note"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/note_abstract"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
