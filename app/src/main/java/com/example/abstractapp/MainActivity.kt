@@ -42,11 +42,14 @@ class MainActivity : AppCompatActivity() {
             binding.switchButton.setText(R.string.login_redirect)
             binding.passwordConfirmLayout.visibility = View.VISIBLE
         }
-        inLoginState = !inLoginState
+        print("ABSTRACT IS IN: $inLoginState")
+        inLoginState = !(inLoginState)
+        print("ABSTRACT IS IN: $inLoginState")
     }
 
     private fun authButtonPress() {
-        if (inLoginState) {
+        print("ABSTRACT IS IN: $inLoginState")
+        if (!inLoginState) {
             loginUser()
         } else {
             registerUser()
@@ -73,7 +76,7 @@ class MainActivity : AppCompatActivity() {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "createUserWithEmail:failure", task.exception)
                         Toast.makeText(
-                            baseContext, "Authentication failed.",
+                            baseContext, "Authentication failed. New User Unsuccessful.",
                             Toast.LENGTH_SHORT
                         ).show()
                         updateUI(null)
@@ -101,7 +104,7 @@ class MainActivity : AppCompatActivity() {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "signInWithEmail:failure", task.exception)
                         Toast.makeText(
-                            baseContext, "Authentication failed.",
+                            baseContext, "Authentication failed. Login Unsuccessful.",
                             Toast.LENGTH_SHORT
                         ).show()
                         updateUI(null)
