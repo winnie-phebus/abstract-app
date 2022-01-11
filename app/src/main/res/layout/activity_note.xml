@@ -22,9 +22,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@android:color/transparent"
-                app:menu="@menu/top_app_bar"
-                app:navigationIcon="@drawable/ic_hamburger_menu"
-                app:title="@string/search_hint" />
+                app:navigationIcon="@drawable/ic_keyboard_back"
+                app:title="Title" />
 
         </com.google.android.material.appbar.AppBarLayout>
         <!-- Screen content -->
@@ -37,17 +36,18 @@
                 android:id="@+id/note_abstract"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
                 android:hint="Your Abstract Here"
                 app:layout_constraintStart_toStartOf="parent"
-                />
+                app:layout_constraintTop_toTopOf="parent" />
+
             <EditText
                 android:id="@+id/note_body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Note"
+                android:padding="@dimen/activity_horizontal_margin"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/note_abstract"/>
+                app:layout_constraintTop_toBottomOf="@id/note_abstract" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

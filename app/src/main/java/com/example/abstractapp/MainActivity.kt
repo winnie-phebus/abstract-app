@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun authButtonPress() {
         print("ABSTRACT IS IN: $inLoginState")
-        if (!inLoginState) {
+        if (!inLoginState) { //TODO: investigate this, why does it work as ! not while true?? Maybe make an Enum
             loginUser()
         } else {
             registerUser()

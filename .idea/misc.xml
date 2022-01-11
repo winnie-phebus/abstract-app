@@ -6,6 +6,7 @@
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_folder_outline.xml" value="0.19375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_folder_plus_outline.xml" value="0.19375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_hamburger_menu.xml" value="0.19375" />
+        <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_keyboard_back.xml" value="0.19375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_note_outline.xml" value="0.19375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_plus.xml" value="0.19375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/drawable/ic_search_magnify.xml" value="0.1" />
@@ -13,7 +14,7 @@
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/activity_login.xml" value="0.1734375" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/activity_note.xml" value="0.1" />
+        <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/activity_note.xml" value="0.18" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/activity_search.xml" value="0.1" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/fragment_registration.xml" value="0.22" />
         <entry key="..\:/Users/doron/Downloads/AbstractApp/app/src/main/res/layout/fragment_search.xml" value="0.1" />

@@ -9,5 +9,9 @@ class NoteActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note)
+        binding = ActivityNoteBinding.inflate(layoutInflater)
+        binding.topAppBar.setNavigationOnClickListener {
+            // TODO: fix your internal navigation :)
+        }
     }
 }
