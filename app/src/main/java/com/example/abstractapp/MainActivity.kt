@@ -62,8 +62,9 @@ class MainActivity : AppCompatActivity() {
         val confirmpassword = binding.passwordConfirm.text.toString()
 
         //
-        if (((email == null) || (password == null)) || (password != confirmpassword)) {
+        if ((password != confirmpassword)) {
             print("Error")  // TODO: sit down and make a proper error display pipeline
+            errorDisplay("Confirm password does not match password. Please try again.")
         } else {
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
@@ -75,10 +76,7 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "createUserWithEmail:failure", task.exception)
-                        Toast.makeText(
-                            baseContext, "Authentication failed. New User Unsuccessful.",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        errorDisplay("Authentication failed. New User Unsuccessful.")
                         updateUI(null)
                     }
                 }
@@ -89,9 +87,7 @@ class MainActivity : AppCompatActivity() {
         val email = binding.loginEmail.text.toString()
         val password = binding.loginPassword.text.toString()
         if ((email == null) || (password == null)) {
-            print("Error!")
-            // TODO: add an error message to user here stating what went wrong,
-            // I probably can make an error() method that can also display login errors as needed
+            errorDisplay("Email or password empty. Please try again.")
         } else {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
@@ -103,10 +99,7 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         // If sign in fails, display a message to the user.
                         Log.w(TAG, "signInWithEmail:failure", task.exception)
-                        Toast.makeText(
-                            baseContext, "Authentication failed. Login Unsuccessful.",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        errorDisplay("Authentication failed. Login Unsuccessful.")
                         updateUI(null)
                     }
                 }
@@ -122,6 +115,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun errorDisplay(errText: String) {
+        Toast.makeText(baseContext, errText, Toast.LENGTH_LONG).show()
+    }
 
     companion object {
         private const val TAG = "MainActivity"
