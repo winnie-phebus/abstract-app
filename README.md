@@ -1,3 +1,8 @@
+# Abstract
+A simple note-taking app that has user-defined 'rules' which allow the app to do more tedious organizing tasks
+in the background.
+
+
 This isn't set up for now. Right now it's a repository for credit to-dos:
 
 ## Resources:
