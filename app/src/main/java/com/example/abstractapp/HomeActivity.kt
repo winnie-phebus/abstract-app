@@ -8,10 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.example.abstractapp.databinding.ActivityHomeBinding
+import com.example.abstractapp.model.Note
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +38,7 @@ class HomeActivity : AppCompatActivity() {
             modalBottomSheet.show(supportFragmentManager, ModalBottomSheet.TAG)
         }
     }
+
 }
 
 // TODO: figure out a better home for this code
@@ -52,11 +55,17 @@ class ModalBottomSheet : BottomSheetDialogFragment() {
         //TODO: add the actions for new folder and new rule
         val noteButton = view.findViewById<Button>(R.id.note_button)
         noteButton.setOnClickListener {
+            addNewNote(Note())
             val intent = Intent(getActivity(), NoteActivity::class.java)
             startActivity(intent)
         }
 
         return view
+    }
+
+    private fun addNewNote(newNote : Note){
+        // TODO: tbh, I'm just dumping this here: https://firebase.google.com/docs/firestore/manage-data/add-data#kotlin+ktx
+        db.collection('notes').document()
     }
 
     companion object {
