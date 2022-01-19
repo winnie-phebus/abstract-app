@@ -53,9 +53,11 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
     - <https://www.markdownguide.org/basic-syntax/>
     
 - ### Navigation
+  
     - <https://developer.android.com/training/basics/firstapp/starting-activity>
     - <https://stackoverflow.com/questions/28961842/how-to-move-from-a-one-fragment-to-an-activity>
     - <https://developer.android.com/guide/navigation/navigation-getting-started>
+    - <https://developer.android.com/guide/navigation/navigation-principles>
     
 - ### For Future Reference
 
