@@ -12,6 +12,7 @@ This isn't set up for now. Right now it's a repository for credit to-dos:
     - <https://firebase.google.com/codelabs/firebase-android?authuser=0#5>
     - <https://firebase.google.com/docs/auth/android/start?authuser=0#kotlin+ktx_4>
     - <https://firebase.google.com/docs/firestore/manage-data/add-data#kotlin+ktx>
+    - <https://firebase.google.com/docs/firestore/query-data/get-data>
     
 - ### Android Basics in Kotlin Course, Android Developers
   
